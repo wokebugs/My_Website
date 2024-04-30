@@ -1,0 +1,52 @@
+/*Universal Selector*/
+* {
+color:#ff729f;
+}
+/*Type Selector*/
+q {
+    color:#56CBF9;
+}
+
+h2 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+/*ID seleector, always start with a #*/
+#dan_interests {
+    color:#BD93BD;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+/*Class selector, always start with a period*/
+.first_text{
+    color:#BD93BD;
+}
+p {
+    line-height: 2.2em;
+}
+img{
+    float: left;
+}
+#stickerss{
+    clear: left;
+}
+
+/*Relational Selector Combination
+  section#where_igotthem>ul {
+    color: #56CBF9;
+  } hypthothetically this is supposed to work but the alernative below wroks the same*/
+
+
+/*Relational Selector Combination,testing because Relational Selector wont work*/
+section#where_igotthem li {
+    color: #56CBF9;
+}
+/*Relational selector descendent*/
+header strong{
+color: #56CBF9 ;
+}
+/*pseudo class must be in order*/
+section#website a:visited {
+    color:#eca049;
+}
+section#website a:hover {
+    font-size: 150%;
+    color:#b665b2;}
