@@ -7,9 +7,10 @@ q {
     color:#56CBF9;
 }
 
-h2 {
+h2, h3 {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+
 /*ID seleector, always start with a #*/
 #dan_interests {
     color:#BD93BD;
