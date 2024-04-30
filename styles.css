@@ -32,10 +32,12 @@ img{
 /*Relational Selector Combination
   section#where_igotthem>ul {
     color: #56CBF9;
-  } hypthothetically this is supposed to work but the alernative below wroks the same*/
+  }
+  
+  ^hypthothetically, this is supposed to work but the alernative below works the same*/
 
 
-/*Relational Selector Combination,testing because Relational Selector wont work*/
+/*Relational Selector Combination,testing because Relational Selector above wont work*/
 section#where_igotthem li {
     color: #56CBF9;
 }
