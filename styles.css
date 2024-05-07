@@ -18,15 +18,11 @@ p {
     line-height: 2.2em;
 }
 
-img {
-    float: left;
-    margin-right: 2em;
-    clear: left;
-}
 
 /*ID seleector, always start with a #*/
 #dan_interests {
     color: #cea7cc;
+    padding: 1em;
 
 }
 
@@ -36,19 +32,38 @@ img {
 
 #stickerss {
     clear: left;
+    padding: 1em;
 }
 
 #use {
     color: #cea7cc;
+    padding: 1em;
 
 }
 
 #link {
     color: #cea7cc;
+    padding: 1em;
 }
 
 #where {
-    color: #cea7cc
+    color: #cea7cc;
+    padding: 1em;
+}
+
+#image1 {
+    float: left;
+    margin-right: 2em;
+    clear: left;
+}
+
+#image2 {  
+    padding: 10px;
+    width: 300px;
+    height: auto;
+    border: 10px solid#cea7cc;
+    border-radius: 10px;
+  
 }
 
 /*Relational Selector Combination,testing because Relational Selector above wont work*/
@@ -102,7 +117,22 @@ body {
     height: 800px;
     background: #000 url("image/background.jpg");
 }
+
 article {
-    column-count: 3; column-gap: 35px;
+    column-count: 3;
+    column-gap: 35px;
     column-rule: 2px solid black;
+}
+.box {
+    width: 20%;
+    text-align: center;
+    margin: 1em;
+    padding: 5em 2em;
+    color: rgb(215, 128, 128);
+    border-radius: 20px;
+}
+h2{
+    background:#f3ebeb;
+    border-radius:  10px; 
+    padding: 20px
 }
