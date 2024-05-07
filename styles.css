@@ -1,47 +1,108 @@
 /*Universal Selector*/
 * {
-color:#ff729f;
-}
-/*Type Selector*/
-q {
-    color:#56CBF9;
+    color: #ff729f;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-h2, h3 {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+/*Type Selector*/
+q {
+    color: #ff729f;
+}
+
+/*Class selector, always start with a period*/
+.emoticon {
+    color: #cea7cc;
+}
+
+p {
+    line-height: 2.2em;
+}
+
+img {
+    float: left;
+    margin-right: 2em;
+    clear: left;
 }
 
 /*ID seleector, always start with a #*/
 #dan_interests {
-    color:#BD93BD;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    color: #cea7cc;
+
 }
-/*Class selector, always start with a period*/
-.first_text{
-    color:#BD93BD;
+
+#first_text {
+    color: #cea7cc;
 }
-p {
-    line-height: 2.2em;
-}
-img{
-    float: left;
-}
-#stickerss{
+
+#stickerss {
     clear: left;
+}
+
+#use {
+    color: #cea7cc;
+
+}
+
+#link {
+    color: #cea7cc;
+}
+
+#where {
+    color: #cea7cc
 }
 
 /*Relational Selector Combination,testing because Relational Selector above wont work*/
 section#where_igotthem li {
-    color: #56CBF9;
+    color: #ff729f;
 }
+
 /*Relational selector descendent*/
-header strong{
-color: #56CBF9 ;
+header strong {
+    color: #ff729f;
 }
+
 /*pseudo class must be in order*/
 section#website a:visited {
-    color:#eca049;
+    color: #eca049;
 }
+
 section#website a:hover {
     font-size: 150%;
-    color:#b665b2;}
+    color: #b665b2;
+}
+
+body {
+    height: 800px;
+    background: #000 url("image/background.jpg");
+}
+
+#stickerss {
+    float: left;
+    width: 450px;
+    margin: 20px 10px;
+}
+
+#where_igotthem {
+    float: left;
+    width: 450px;
+    margin: 20px 10px;
+}
+
+#website {
+    float: right;
+    width: 450px;
+    margin: 20px 10px;
+}
+
+footer {
+    clear: both;
+}
+
+body {
+    height: 800px;
+    background: #000 url("image/background.jpg");
+}
+article {
+    column-count: 3; column-gap: 35px;
+    column-rule: 2px solid black;
+}
