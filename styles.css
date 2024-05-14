@@ -1,129 +1,159 @@
-/*Universal Selector*/
+/* Universal Selector */
+/* Applies styles to all elements */
 * {
     color: #ff729f;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/*Type Selector*/
+/* Type Selector */
+/* Styles <q> elements */
 q {
+    clear: both;
     color: #ff729f;
 }
 
-/*Class selector, always start with a period*/
+/* Class Selector */
+/* Styles elements with class .emoticon */
 .emoticon {
     color: #cea7cc;
 }
 
+/* Styles paragraphs */
 p {
     line-height: 2.2em;
 }
 
-
-/*ID seleector, always start with a #*/
+/* ID Selector */
+/* Styles element with id #dan_interests */
 #dan_interests {
     color: #cea7cc;
     padding: 1em;
-
 }
 
+/* Styles element with id #first_text */
 #first_text {
     color: #cea7cc;
 }
 
+/* Styles element with id #stickerss */
 #stickerss {
     clear: left;
     padding: 1em;
 }
 
+/* Styles element with id #use */
 #use {
     color: #cea7cc;
     padding: 1em;
-
 }
 
+/* Styles element with id #link */
 #link {
     color: #cea7cc;
     padding: 1em;
 }
 
+/* Styles element with id #where */
 #where {
     color: #cea7cc;
     padding: 1em;
 }
 
+/* Styles element with id #image1 */
 #image1 {
     float: left;
     margin-right: 2em;
     clear: left;
+    max-width: 100%;
+    height: auto;
+    min-width: 200px;
 }
 
+/* Styles element with id #image2 */
 #image2 {
     padding: 10px;
     width: 300px;
     height: auto;
     border: 10px solid#cea7cc;
     border-radius: 10px;
-
+    margin: 10px;
 }
 
-/*Relational Selector Combination,testing because Relational Selector above wont work*/
+/* Relational Selector Combination */
+/* Styles <li> elements within #where_igotthem */
 section#where_igotthem li {
     color: #ff729f;
 }
 
-/*Relational selector descendent*/
+/* Relational Descendant Selector */
+/* Styles <strong> elements within <header> */
 header strong {
     color: #ff729f;
 }
 
-/*pseudo class must be in order*/
+/* Pseudo-class */
+/* Styles visited links within #website section */
 section#website a:visited {
     color: #eca049;
 }
 
+/* Pseudo-class */
+/* Styles hovered links within #website section */
 section#website a:hover {
     font-size: 150%;
     color: #b665b2;
 }
 
+/* Body styles */
+/* Styles for the body element */
 body {
+    width: 75%;
+    margin: auto;
     height: 800px;
+    padding: 2em;
     background: #000 url("image/background.jpg");
 }
 
+/* Styles for #stickerss */
 #stickerss {
     float: left;
     width: 450px;
     margin: 20px 10px;
 }
 
+/* Styles for #where_igotthem */
 #where_igotthem {
     clear: left;
     width: 450px;
     margin: 20px 10px;
 }
 
+/* Styles for #website */
 #website {
     clear: right;
     width: 450px;
     margin: 20px 10px;
 }
 
+/* Styles for footer */
 footer {
     clear: both;
 }
 
+/* Duplicate Styles for body */
 body {
     height: 800px;
     background: #000 url("image/background.jpg");
 }
 
+/* Styles for articles */
 article {
     column-count: 3;
     column-gap: 35px;
     column-rule: 2px solid black;
 }
 
+/* Styles for .box */
 .box {
     width: 20%;
     text-align: center;
@@ -133,50 +163,93 @@ article {
     border-radius: 20px;
 }
 
+/* Styles for h2 */
 h2 {
     background: #f3ebeb;
     border-radius: 10px;
-    padding: 20px
+    padding: 20px;
 }
 
+/* Styles for ul with class .naruto */
 ul.naruto {
     list-style: url("../image/narutooo.png");
 }
 
-/*navigation menu*/
+/* Navigation menu styles */
+#nav_menu {
+    padding-bottom: 2em;
+    margin: auto;
+    width: 50%;
+}
+
 #nav_menu ul {
     list-style-type: none;
-    padding-bottom: 2em;
+    padding-bottom: 0%;
     margin: auto;
     width: 600px;
 }
 
 #nav_menu ul li {
     float: left;
+    width: 33%;
 }
 
 #nav_menu ul li a {
     text-align: center;
     display: block;
-    width: 175px;
     padding: 1em 0;
     text-decoration: none;
     background-color: rgba(180, 118, 177, 0.432);
     color: white;
     font-weight: bold;
-    border-right: 2px solid white;
+    border-bottom: 2px solid white;
 }
+
 #nav_menu ul li a:hover {
     background-color: rgba(168, 13, 163, 0.281);
 }
+
 #nav_menu ul li a.lastitem {
     border-right: none;
 }
 
+/* Styles for header */
 header {
     clear: left;
 }
 
+/* Styles for #blog */
 #blog {
     clear: left;
+}
+
+/* Styles for image1 */
+header#homepage img {
+    float: left;
+    width: 40%;
+    max-width: 400px;
+    min-width: 200px;
+    padding-right: 2em
+}
+
+/* Media Code */
+@media only screen and (max-width: 630px) {
+    #nav_menu ul li {
+        float: none;
+        width: 100%
+    }
+
+    #nav_menu ul li {
+        border-right: none;
+        border-radius: 2px solid white;
+    }
+
+    #nav_menu ul li a.lastitem {
+        border-right: none;
+    }
+
+    #nav_menu ul li a.lastitem {
+        border-right: none;
+    }
+
 }
