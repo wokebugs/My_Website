@@ -57,13 +57,13 @@ p {
     clear: left;
 }
 
-#image2 {  
+#image2 {
     padding: 10px;
     width: 300px;
     height: auto;
     border: 10px solid#cea7cc;
     border-radius: 10px;
-  
+
 }
 
 /*Relational Selector Combination,testing because Relational Selector above wont work*/
@@ -98,13 +98,13 @@ body {
 }
 
 #where_igotthem {
-    float: left;
+    clear: left;
     width: 450px;
     margin: 20px 10px;
 }
 
 #website {
-    float: right;
+    clear: right;
     width: 450px;
     margin: 20px 10px;
 }
@@ -123,6 +123,7 @@ article {
     column-gap: 35px;
     column-rule: 2px solid black;
 }
+
 .box {
     width: 20%;
     text-align: center;
@@ -131,8 +132,51 @@ article {
     color: rgb(215, 128, 128);
     border-radius: 20px;
 }
-h2{
-    background:#f3ebeb;
-    border-radius:  10px; 
+
+h2 {
+    background: #f3ebeb;
+    border-radius: 10px;
     padding: 20px
+}
+
+ul.naruto {
+    list-style: url("../image/narutooo.png");
+}
+
+/*navigation menu*/
+#nav_menu ul {
+    list-style-type: none;
+    padding-bottom: 2em;
+    margin: auto;
+    width: 600px;
+}
+
+#nav_menu ul li {
+    float: left;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 175px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: rgba(180, 118, 177, 0.432);
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid white;
+}
+#nav_menu ul li a:hover {
+    background-color: rgba(168, 13, 163, 0.281);
+}
+#nav_menu ul li a.lastitem {
+    border-right: none;
+}
+
+header {
+    clear: left;
+}
+
+#blog {
+    clear: left;
 }
