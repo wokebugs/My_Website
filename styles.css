@@ -10,8 +10,11 @@
 q {
     clear: both;
     color: #ff729f;
+    font-size: large;
 }
-
+li{
+    font-size: large;
+}
 /* Class Selector */
 /* Styles elements with class .emoticon */
 .emoticon {
@@ -21,6 +24,7 @@ q {
 /* Styles paragraphs */
 p {
     line-height: 2.2em;
+    font-size: large;
 }
 
 /* ID Selector */
@@ -158,8 +162,8 @@ article {
     width: 20%;
     text-align: center;
     margin: 1em;
-    padding: 5em 2em;
-    color: rgb(215, 128, 128);
+    color: #cea7cc;
+    padding: 1em;
     border-radius: 20px;
 }
 
@@ -179,39 +183,35 @@ ul.naruto {
 #nav_menu {
     padding-bottom: 2em;
     margin: auto;
-    width: 50%;
+    width: 100%;
+    text-align: center;
 }
 
 #nav_menu ul {
+    padding: 0;
+    margin: 0;
     list-style-type: none;
-    padding-bottom: 0%;
-    margin: auto;
-    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #nav_menu ul li {
-    float: left;
-    width: 33%;
+    margin-right: 20px;
+    border-radius: 30px;
+    background: #f3ebeb;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: large;
 }
 
 #nav_menu ul li a {
-    text-align: center;
     display: block;
-    padding: 1em 0;
     text-decoration: none;
-    background-color: rgba(180, 118, 177, 0.432);
-    color: white;
-    font-weight: bold;
-    border-bottom: 2px solid white;
+    color: #cea7cc;
+    padding: 12px;
 }
 
-#nav_menu ul li a:hover {
-    background-color: rgba(168, 13, 163, 0.281);
-}
-
-#nav_menu ul li a.lastitem {
-    border-right: none;
-}
 
 /* Styles for header */
 header {
@@ -232,24 +232,50 @@ header#homepage img {
     padding-right: 2em
 }
 
-/* Media Code */
-@media only screen and (max-width: 630px) {
-    #nav_menu ul li {
+/*media*/
+@media screen and (max-width: 760px) {
+    body {
+        font-size: 14px;
+    }
+
+    #image1 {
         float: none;
-        width: 100%
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+    #image2 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #stickerss,
+    #where_igotthem,
+    #website {
+        width: 100%;
+        padding: 0.5em;
+    }
+
+    h2 {
+        padding: 0.5em;
+    }
+
+    /* Navigation menu adjustments */
+
+    #nav_menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    #nav_menu ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
     }
 
     #nav_menu ul li {
-        border-right: none;
-        border-radius: 2px solid white;
+        display: inline;
+        margin-right: 0;
+        margin-bottom: 10px;
     }
-
-    #nav_menu ul li a.lastitem {
-        border-right: none;
-    }
-
-    #nav_menu ul li a.lastitem {
-        border-right: none;
-    }
-
 }
