@@ -253,13 +253,15 @@ header#homepage img {
     #where_igotthem,
     #website {
         width: 100%;
-        padding: 0.5em;
+        padding: 1em;
     }
 
     h2 {
-        padding: 0.5em;
+        padding: 1em;
     }
-
+.header{
+    float: none;
+}
     /* Navigation menu adjustments */
 
     #nav_menu {
