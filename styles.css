@@ -8,13 +8,16 @@
     font-weight: normal;
     font-style: normal;
 }
-img{
+
+img {
     padding: 3em;
 }
+
 /* Apply Cookie font to h2 headers */
 * {
     font-family: 'Cookie', cursive, sans-serif;
 }
+
 /* Styles for all links */
 a {
     color: #ff729f; /* Default link color */
@@ -79,7 +82,6 @@ section#website a:visited {
 section#website a:hover {
     font-size: 1.4em;
     color: #b665b2;
-    
 }
 
 /* Body styles */
@@ -88,7 +90,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 1.2em;
-    background: #000 url("image/background.jpg")  center;
+    background: #000 url("image/background.jpg") center;
     background-size: cover;
 }
 
@@ -169,12 +171,14 @@ section ul li {
     margin-bottom: 10px;
     font-size: 1.2em;
 }
+
 /* Styles for Miffy gif */
 #miffy {
     display: block;
     margin: 0 auto; /* Center horizontally */
     max-width: 100%; /* Ensure it doesn't exceed its original size */
 }
+
 /* Footer styles */
 footer {
     background-color: #ff729f;
@@ -184,11 +188,17 @@ footer {
     text-align: center;
 }
 
+/*blog.html images*/
+.peeker {
+    max-width: 100%; /* Ensure images don't exceed their container width */
+    height: auto; /* Maintain aspect ratio */
+    padding: 3em; /* Or any other styling you want to apply */
+    width: 70%; /* Set initial width to 70% of container width */
+    max-width: 800px; /* Set maximum width for larger screens */
+}
 
-/* Media queries for iPhone screens */
+/* Media queries */
 @media only screen and (max-width: 760px) {
-
-    /* Adjustments for smaller screens */
     body {
         font-size: 1em;
     }
@@ -208,8 +218,21 @@ footer {
     section ul li {
         font-size: 1em;
     }
+
     #miffy {
-        float: none; /* Remove float */
-        margin: 0 auto; /* Center horizontally */
+        float: none;
+        margin: 0 auto;
+    }
+
+    /* Adjustments for smaller screens */
+    .peeker {
+        width: 100%; /* Set images to take up full width of container on smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjustments for even smaller screens */
+    .peeker {
+        width: 80%; /* Set images to take up 80% of container width on even smaller screens */
     }
 }
