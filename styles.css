@@ -1,20 +1,46 @@
+/* Define Cookie font */
+@font-face {
+    font-family: 'Cookie';
+    src: url('path/to/cookie-font.woff2') format('woff2'),
+        /* Modern Browsers */
+        url('path/to/cookie-font.woff') format('woff');
+    /* Legacy Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+img{
+    padding: 3em;
+}
+/* Apply Cookie font to h2 headers */
+* {
+    font-family: 'Cookie', cursive, sans-serif;
+}
+/* Styles for all links */
+a {
+    color: #ff729f; /* Default link color */
+    text-decoration: none;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+/* Hover effect for all links */
+a:hover {
+    color: #b665b2; /* Hover color */
+    font-size: 110%; /* Increase font size on hover */
+}
+
 /* Universal Selector */
 /* Applies styles to all elements */
 * {
-    color: #ff729f;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
 }
 
 /* Type Selector */
 /* Styles <q> elements */
 q {
-    clear: both;
-    color: #ff729f;
-    font-size: large;
+    color: #050505;
+    font-size: 1.2em;
 }
-li{
-    font-size: large;
-}
+
 /* Class Selector */
 /* Styles elements with class .emoticon */
 .emoticon {
@@ -23,8 +49,10 @@ li{
 
 /* Styles paragraphs */
 p {
-    line-height: 2.2em;
-    font-size: large;
+    line-height: 1.6em;
+    font-size: 1.2em;
+    color: black;
+    /* Set paragraph text color to black */
 }
 
 /* ID Selector */
@@ -34,65 +62,10 @@ p {
     padding: 1em;
 }
 
-/* Styles element with id #first_text */
-#first_text {
-    color: #cea7cc;
-}
-
-/* Styles element with id #stickerss */
-#stickerss {
-    clear: left;
-    padding: 1em;
-}
-
-/* Styles element with id #use */
-#use {
-    color: #cea7cc;
-    padding: 1em;
-}
-
-/* Styles element with id #link */
-#link {
-    color: #cea7cc;
-    padding: 1em;
-}
-
-/* Styles element with id #where */
-#where {
-    color: #cea7cc;
-    padding: 1em;
-}
-
-/* Styles element with id #image1 */
-#image1 {
-    float: left;
-    margin-right: 2em;
-    clear: left;
-    max-width: 100%;
-    height: auto;
-    min-width: 200px;
-}
-
-/* Styles element with id #image2 */
-#image2 {
-    padding: 10px;
-    width: 300px;
-    height: auto;
-    border: 10px solid#cea7cc;
-    border-radius: 10px;
-    margin: 10px;
-}
-
 /* Relational Selector Combination */
 /* Styles <li> elements within #where_igotthem */
 section#where_igotthem li {
-    color: #ff729f;
-}
-
-/* Relational Descendant Selector */
-/* Styles <strong> elements within <header> */
-header strong {
-    color: #ff729f;
+    color: #000000;
 }
 
 /* Pseudo-class */
@@ -104,180 +77,139 @@ section#website a:visited {
 /* Pseudo-class */
 /* Styles hovered links within #website section */
 section#website a:hover {
-    font-size: 150%;
+    font-size: 1.4em;
     color: #b665b2;
+    
 }
 
 /* Body styles */
 /* Styles for the body element */
 body {
-    width: 75%;
-    margin: auto;
-    height: 800px;
-    padding: 2em;
-    background: #000 url("image/background.jpg");
-}
-
-/* Styles for #stickerss */
-#stickerss {
-    float: left;
-    width: 450px;
-    margin: 20px 10px;
-}
-
-/* Styles for #where_igotthem */
-#where_igotthem {
-    clear: left;
-    width: 450px;
-    margin: 20px 10px;
-}
-
-/* Styles for #website */
-#website {
-    clear: right;
-    width: 450px;
-    margin: 20px 10px;
-}
-
-/* Styles for footer */
-footer {
-    clear: both;
-}
-
-/* Duplicate Styles for body */
-body {
-    height: 800px;
-    background: #000 url("image/background.jpg");
-}
-
-/* Styles for articles */
-article {
-    column-count: 3;
-    column-gap: 35px;
-    column-rule: 2px solid black;
-}
-
-/* Styles for .box */
-.box {
-    width: 20%;
-    text-align: center;
-    margin: 1em;
-    color: #cea7cc;
-    padding: 1em;
-    border-radius: 20px;
-}
-
-/* Styles for h2 */
-h2 {
-    background: #f3ebeb;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-/* Styles for ul with class .naruto */
-ul.naruto {
-    list-style: url("../image/narutooo.png");
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    background: #000 url("image/background.jpg")  center;
+    background-size: cover;
 }
 
 /* Navigation menu styles */
 #nav_menu {
-    padding-bottom: 2em;
-    margin: auto;
-    width: 100%;
+    background-color: #ff729f;
+    padding: 10px 0;
     text-align: center;
 }
 
 #nav_menu ul {
-    padding: 0;
     margin: 0;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 0;
 }
 
 #nav_menu ul li {
+    display: inline;
     margin-right: 20px;
-    border-radius: 30px;
-    background: #f3ebeb;
-    border-radius: 10px;
-    padding: 20px;
-    font-size: large;
 }
 
 #nav_menu ul li a {
-    display: block;
+    color: #fff;
     text-decoration: none;
-    color: #cea7cc;
-    padding: 12px;
+    transition: font-size 0.3s, color 0.3s;
 }
 
+#nav_menu ul li a:hover {
+    color: #b665b2;
+    font-size: 1.2em;
+}
 
-/* Styles for header */
+/* Header styles */
 header {
-    clear: left;
+    text-align: center;
+    padding: 50px 0;
 }
 
-/* Styles for #blog */
-#blog {
-    clear: left;
+header h1 {
+    color: #ff729f;
+    font-size: 2em;
 }
 
-/* Styles for image1 */
-header#homepage img {
-    float: left;
-    width: 40%;
-    max-width: 400px;
-    min-width: 200px;
-    padding-right: 2em
+header p.header {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #cea7cc;
 }
 
-/*media*/
-@media screen and (max-width: 760px) {
+header img#image1 {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Section styles */
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Styles for h2 boxes */
+h2 {
+    background: #ff729f; /* Same color as the nav bar */
+    border-radius: 20px; /* Rounded corners */
+    padding: 15px; /* Adjust padding as needed */
+    width: 70%; /* Adjust width as needed */
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Center text */
+    color: white; /* White text color */
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+/* Styles for Miffy gif */
+#miffy {
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+    max-width: 100%; /* Ensure it doesn't exceed its original size */
+}
+/* Footer styles */
+footer {
+    background-color: #ff729f;
+    color: white;
+    /* Set text color to white */
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+/* Media queries for iPhone screens */
+@media only screen and (max-width: 760px) {
+
+    /* Adjustments for smaller screens */
     body {
-        font-size: 14px;
+        font-size: 1em;
     }
 
-    #image1 {
-        float: none;
-        margin-right: 0;
-        margin-bottom: 1em;
+    header h1 {
+        font-size: 1.5em;
     }
 
-    #image2 {
-        width: 100%;
-        margin: 10px 0;
+    header p.header {
+        font-size: 1em;
     }
 
-    #stickerss,
-    #where_igotthem,
-    #website {
-        width: 100%;
-        padding: 1em;
+    section h2 {
+        font-size: 1.3em;
     }
 
-    h2 {
-        padding: 1em;
+    section ul li {
+        font-size: 1em;
     }
-.header{
-    float: none;
-}
-    /* Navigation menu adjustments */
-
-    #nav_menu {
-        width: 100%;
-        text-align: center;
-    }
-
-    #nav_menu ul {
-        flex-direction: column;
-        align-items: center;
-        padding: 2%;
-    }
-
-    #nav_menu ul li {
-        display: inline;
-        margin-right: 0;
-        margin-bottom: 10px;
+    #miffy {
+        float: none; /* Remove float */
+        margin: 0 auto; /* Center horizontally */
     }
 }
