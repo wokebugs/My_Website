@@ -1,4 +1,4 @@
-/* Define Cookie font */
+/*Cookie font */
 @font-face {
     font-family: 'Cookie';
     src: url('path/to/cookie-font.woff2') format('woff2'),
@@ -20,15 +20,18 @@ img {
 
 /* Styles for all links */
 a {
-    color: #ff729f; /* Default link color */
+    color: #ff729f;
+    /* Default link color */
     text-decoration: none;
     transition: color 0.3s, font-size 0.3s;
 }
 
 /* Hover effect for all links */
 a:hover {
-    color: #b665b2; /* Hover color */
-    font-size: 110%; /* Increase font size on hover */
+    color: #b665b2;
+    /* Hover color */
+    font-size: 110%;
+    /* Increase font size on hover */
 }
 
 /* Universal Selector */
@@ -85,7 +88,6 @@ section#website a:hover {
 }
 
 /* Body styles */
-/* Styles for the body element */
 body {
     margin: 0;
     padding: 0;
@@ -102,25 +104,31 @@ body {
 }
 
 #nav_menu ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+
 }
 
 #nav_menu ul li {
-    display: inline;
-    margin-right: 20px;
+    flex-basis: 33%;
 }
 
 #nav_menu ul li a {
     color: #fff;
     text-decoration: none;
     transition: font-size 0.3s, color 0.3s;
+    display: block;
+    /* Make each link a block element */
 }
 
 #nav_menu ul li a:hover {
     color: #b665b2;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
+
 
 /* Header styles */
 header {
@@ -128,7 +136,7 @@ header {
     padding: 50px 0;
 }
 
- h1 {
+h1 {
     color: #ff729f;
     font-size: 2em;
 }
@@ -153,13 +161,20 @@ section {
 
 /* Styles for h2 boxes */
 h2 {
-    background: #ff729f; /* Same color as the nav bar */
-    border-radius: 20px; /* Rounded corners */
-    padding: 15px; /* Adjust padding as needed */
-    width: 70%; /* Adjust width as needed */
-    margin: 0 auto; /* Center horizontally */
-    text-align: center; /* Center text */
-    color: white; /* White text color */
+    background: #ff729f;
+
+    border-radius: 20px;
+
+    padding: 15px;
+
+    width: 70%;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    color: white;
+
 }
 
 section ul {
@@ -175,26 +190,42 @@ section ul li {
 /* Styles for Miffy gif */
 #miffy {
     display: block;
-    margin: 0 auto; /* Center horizontally */
-    max-width: 100%; /* Ensure it doesn't exceed its original size */
+    margin: 0 auto;
+
+    max-width: 100%;
 }
 
 /* Footer styles */
 footer {
     background-color: #ff729f;
     color: white;
-    /* Set text color to white */
+
     padding: 20px 0;
     text-align: center;
 }
 
 /*blog.html images*/
 .peeker {
-    max-width: 100%; /* Ensure images don't exceed their container width */
-    height: auto; /* Maintain aspect ratio */
-    padding: 3em; /* Or any other styling you want to apply */
-    width: 70%; /* Set initial width to 70% of container width */
-    max-width: 800px; /* Set maximum width for larger screens */
+    max-width: 100%;
+    height: auto;
+    padding: 3em;
+    width: 70%;
+    max-width: 800px;
+}
+
+/*Gallery*/
+div.gallery {
+    margin: 2 5em;
+}
+
+/* Main grid container */
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 150px)/ repeat(3, 200px 1fr);
+    grid-gap: 20px 20px;
+    align-items: end;
+    padding: 20px;
+    height: auto;
 }
 
 /* Media queries */
@@ -224,15 +255,38 @@ footer {
         margin: 0 auto;
     }
 
-    /* Adjustments for smaller screens */
-    .peeker {
-        width: 100%; /* Set images to take up full width of container on smaller screens */
+    #nav_menu ul {
+        flex-direction: column;
+        /* Change direction to column for smaller screens */
+    }
+
+    #nav_menu ul li {
+        margin-bottom: 10px;
+        /* Add some margin between links */
+    }
+
+    #nav_menu ul li:last-child {
+        margin-bottom: 0;
+        /* Remove bottom margin from the last link */
     }
 }
 
+/* Adjustments for smaller screens */
+.peeker {
+    width: 100%;
+}
+
 @media only screen and (max-width: 480px) {
+
     /* Adjustments for even smaller screens */
     .peeker {
-        width: 80%; /* Set images to take up 80% of container width on even smaller screens */
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .gallery-item {
+        width: 80%;
     }
 }
