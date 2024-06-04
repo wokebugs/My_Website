@@ -228,6 +228,21 @@ main {
     height: auto;
 }
 
+/* Table Styles */
+table,
+th,
+td {
+    border: 3px solid #b665b2;
+    border-collapse: collapse;
+    margin: 0 auto;
+
+}
+
+th,
+td {
+    padding: .4em .9em;
+}
+
 /* Media queries */
 @media only screen and (max-width: 760px) {
     body {
