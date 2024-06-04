@@ -1,0 +1,5 @@
+/**just a little recommendation/suggestion, my first will be the /**/ on top of the Blog Updates page, upper right.
+
+**Second, a placeholder at the bottom.
+
+**Third will be the Fold in all pages for uniformity.*/
