@@ -1,12 +1,13 @@
-/*Cookie font */
+/* Cookie font */
 @font-face {
     font-family: 'Cookie';
-    src: url('path/to/cookie-font.woff2') format('woff2'),
-        /* Modern Browsers */
-        url('path/to/cookie-font.woff') format('woff');
-    /* Legacy Browsers */
+    src: url('path/to/cookie-font.woff2') format('woff2'), /* Modern Browsers */
+         url('path/to/cookie-font.woff') format('woff'); /* Legacy Browsers */
     font-weight: normal;
     font-style: normal;
+    src: local('☺'), /* Emoji */
+         url('path/to/cookie-font.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('path/to/cookie-font.svg#cookie') format('svg'); /* Legacy iOS */
 }
 
 img {
