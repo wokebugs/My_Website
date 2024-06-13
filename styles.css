@@ -1,13 +1,18 @@
 /* Cookie font */
 @font-face {
     font-family: 'Cookie';
-    src: url('path/to/cookie-font.woff2') format('woff2'), /* Modern Browsers */
-         url('path/to/cookie-font.woff') format('woff'); /* Legacy Browsers */
+    src: url('path/to/cookie-font.woff2') format('woff2'),
+        /* Modern Browsers */
+        url('path/to/cookie-font.woff') format('woff');
+    /* Legacy Browsers */
     font-weight: normal;
     font-style: normal;
-    src: local('☺'), /* Emoji */
-         url('path/to/cookie-font.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('path/to/cookie-font.svg#cookie') format('svg'); /* Legacy iOS */
+    src: local('☺'),
+        /* Emoji */
+        url('path/to/cookie-font.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('path/to/cookie-font.svg#cookie') format('svg');
+    /* Legacy iOS */
 }
 
 img {
@@ -56,6 +61,7 @@ q {
 
 /* Styles paragraphs */
 p {
+    padding: 1.5em;
     line-height: 1.6em;
     font-size: 1.2em;
     color: black;
@@ -122,7 +128,6 @@ body {
     text-decoration: none;
     transition: font-size 0.3s, color 0.3s;
     display: block;
-    /* Make each link a block element */
 }
 
 #nav_menu ul li a:hover {
@@ -204,7 +209,10 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
-
+#foot
+{
+    color: white;
+}
 /*blog.html images*/
 .peeker {
     max-width: 100%;
@@ -243,14 +251,19 @@ th,
 td {
     padding: .4em .9em;
 }
+
 /* CSS for image */
 .me {
-    max-width: 100%; /* Maximum width */
+    max-width: 100%;
+    /* Maximum width */
     height: auto;
     display: block;
-    margin: 0 auto; /* Center the image */
-    min-width: 400px; /* Minimum width */
-    max-height: 800px; /* Maximum height */
+    margin: 0 auto;
+    /* Center the image */
+    min-width: 400px;
+    /* Minimum width */
+    max-height: 800px;
+    /* Maximum height */
 }
 
 
